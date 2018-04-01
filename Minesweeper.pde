@@ -63,14 +63,17 @@ public void displayLosingMessage()
         if(bombs.get(i).isClicked()==false)
             bombs.get(i).mousePressed();
     isLost = true;
-    buttons[rows/2][(columns/2)-4].setLabel("Y");
-    buttons[rows/2][(columns/2)-3].setLabel("O");
-    buttons[rows/2][(columns/2-2)].setLabel("U");
+
+    buttons[rows/2][(columns/2)-5].setLabel("G");
+    buttons[rows/2][(columns/2)-4].setLabel("A");
+    buttons[rows/2][(columns/2-3)].setLabel("M");
+    buttons[rows/2][(columns/2-2)].setLabel("E");
     buttons[rows/2][(columns/2-1)].setLabel("");
-    buttons[rows/2][(columns/2)].setLabel("L");
-    buttons[rows/2][(columns/2+1)].setLabel("O");
-    buttons[rows/2][(columns/2+2)].setLabel("S");
-    buttons[rows/2][(columns/2+3)].setLabel("E");
+    buttons[rows/2][(columns/2)].setLabel("O");
+    buttons[rows/2][(columns/2+1)].setLabel("V");
+    buttons[rows/2][(columns/2+2)].setLabel("E");
+    buttons[rows/2][(columns/2+3)].setLabel("R");
+    buttons[rows/2][(columns/2+4)].setLabel("!");
 }
 public void displayWinningMessage()
 {
